@@ -1,2 +1,22 @@
 # StegoCrypt
-StegoCrypt graduation project: encrypted messages hidden inside images with Classic and edge-adaptive LSB, plus PSNR/SSIM measurements.
+
+مشروع تخرج مبني باستخدام Flutter لإخفاء الرسائل المشفّرة داخل الصور. يستخدم AES-256-GCM لتشفير الرسالة وLSB لإخفائها داخل الصورة.
+
+## النسخ
+
+- [V1 — النسخة الأصلية](v1/)
+- [V2 — النسخة المطوّرة](v2/): نسخة منفصلة تضيف LSB تكيّفيًا مع الحواف ومقاييس PSNR وSSIM.
+
+كل نسخة موجودة في مجلد مستقل ويمكن تشغيلها كمشروع Flutter منفصل.
+
+## التشغيل
+
+اختر النسخة المطلوبة ثم نفّذ:
+
+```sh
+cd v1
+flutter pub get
+flutter run
+```
+
+لاستخدام النسخة المطوّرة، استبدل `v1` بـ `v2`. استخدم صور PNG للحفاظ على البيانات المخفية؛ ضغط JPEG قد يتلفها.
